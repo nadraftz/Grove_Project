@@ -4,14 +4,14 @@ Sample Selenium WebDriver Maven Projects I created in Java by using TestNG and E
 # Setup
 ## Install Marven and TestNG in Eclipse, and downloaded the selenium chrome webdriver.
 You can either google Marven installation in Eclipse, and Install TestNG in Eclipse, or follow the following 3 instructions:
-⋅⋅* https://www.youtube.com/watch?v=WzuJANOPLyQ - this is a tutorial for beginners without introducing TestNG nor Maven.
-⋅⋅* https://www.techbeamers.com/create-selenium-webdriver-maven-project/
-..* https://www.guru99.com/maven-jenkins-with-selenium-complete-tutorial.html
+- https://www.youtube.com/watch?v=WzuJANOPLyQ - this is a tutorial for beginners without introducing TestNG nor Maven.
+- https://www.techbeamers.com/create-selenium-webdriver-maven-project/
+- https://www.guru99.com/maven-jenkins-with-selenium-complete-tutorial.html
 
 ## Create a Maven project 
-From Eclipse - File - New - Other - Maven - Maven Project, Next;
-Check "Create a simple project" and "Use default Workspace location" with absolute path point to \eclipse-space, Next;
-Group Id: com.kugeci, Artifact Id: java-selenium-testng-maven-project, Finish.
+- From Eclipse - File - New - Other - Maven - Maven Project, Next;
+- Check "Create a simple project" and "Use default Workspace location" with absolute path point to \eclipse-space, Next;
+- Group Id: com.kugeci, Artifact Id: java-selenium-testng-maven-project, Finish.
 
 ## Modify JRE System Library
 Right click JRE System Library listed under the newly create Mavan project, properties, select Workspace default JRE, Apply and Close.
@@ -47,15 +47,15 @@ Right click JRE System Library listed under the newly create Mavan project, prop
 ```
 
 ## Create TestNG class
-Right click the newly created Maven project, New, Other, TestNG class, Next;
-Source folder \Maven-project-artifact-id\src\test\java, src/main to store developer code, src/test to store testing code;
-Package name: com.kugeci, Class name: HomePageTest, How to structure test classes plese read: http://elementalselenium.com/tips/37-oop;
-Choose @Before Test, and @After Test, Finish.
+- Right click the newly created Maven project, New, Other, TestNG class, Next;
+- Source folder \Maven-project-artifact-id\src\test\java, src/main to store developer code, src/test to store testing code;
+- Package name: com.kugeci, Class name: HomePageTest, How to structure test classes plese read: http://elementalselenium.com/tips/37-oop;
+- Choose @Before Test, and @After Test, Finish.
 
 ## Copy WebDriver
-Right click the newly created Maven project, New, Folder, Folder Name: driver, Finish;
-Copy the downloaded Chrom driver, and paste it into Eclipse - newly create Maven project - driver folder (you can paste in Eclipse IDE);
-You don't have to create a new driver folder and paste the driver here, but you do need to specify in your TestNG class java file the location of your Chrom driver.
+- Right click the newly created Maven project, New, Folder, Folder Name: driver, Finish;
+- Copy the downloaded Chrom driver, and paste it into Eclipse - newly create Maven project - driver folder (you can paste in Eclipse IDE);
+- You don't have to create a new driver folder and paste the driver here, but you do need to specify in your TestNG class java file the location of your Chrom driver.
 
 ## Modify TestNG class java file
 ```java
@@ -94,6 +94,6 @@ public class NewlyCreatedTestNGClassName {
 Right click on the newly created Maven project, TestNG, Convert to TestNG, a testng.xml will be created below pom.xml, Finish.
 
 ## Execute
-Right click on the testng.xml, Run as, TestNG Suite;
-Check results in Console, and Results of running suite.
+- Right click on the testng.xml, Run as, TestNG Suite;
+- Check results in Console, and Results of running suite.
 
