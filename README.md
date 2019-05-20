@@ -53,8 +53,8 @@ Right click JRE System Library listed under the newly create Mavan project, prop
 
 ## Copy WebDriver
 - Right click the newly created Maven project, New, Folder, Folder Name: driver, Finish;
-- Copy the downloaded Chrome driver, and paste it into Eclipse - newly create Maven project - driver folder (you can paste in Eclipse IDE);
-- You don't have to create a new driver folder and paste the driver here, but you do need to specify in your TestNG class java file the location of your Chrome driver.
+- Copy the downloaded Chrome driver, and paste it into Eclipse - newly create Maven project - driver folder (you can paste in Eclipse IDE), and in your code, specify: System.setProperty("webdriver.chrome.driver",".\\driver\\chromedriver.exe");
+- Another way to do this is create a "drivers" folder beside your newly created Maven project folder in you folder system, and in the Java code, point to the drivers folder: System.setProperty("webdriver.chrome.driver","..\\drivers\\chromedriver.exe"); 
 
 ## Modify TestNG class java file
 ```java
