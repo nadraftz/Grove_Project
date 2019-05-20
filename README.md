@@ -103,3 +103,4 @@ Right click on the newly created Maven project, TestNG, Convert to TestNG, a tes
 # Test Suite and Tests Stucture
 - How to structure test classes plese read: http://elementalselenium.com/tips/37-oop;
 - TestNG before and after annotations: https://howtodoinjava.com/testng/testng-before-and-after-annotations/
+- Variable scope: Broadly speaking, public means everyone is allowed to access, private means that only members of the same class are allowed to access, and protected means that members of subclasses are also allowed. 
