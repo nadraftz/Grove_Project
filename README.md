@@ -54,8 +54,8 @@ Right click JRE System Library listed under the newly create Mavan project, prop
 
 ## Copy WebDriver
 - Right click the newly created Maven project, New, Folder, Folder Name: driver, Finish;
-- Copy the downloaded Chrom driver, and paste it into Eclipse - newly create Maven project - driver folder (you can paste in Eclipse IDE);
-- You don't have to create a new driver folder and paste the driver here, but you do need to specify in your TestNG class java file the location of your Chrom driver.
+- Copy the downloaded Chrome driver, and paste it into Eclipse - newly create Maven project - driver folder (you can paste in Eclipse IDE);
+- You don't have to create a new driver folder and paste the driver here, but you do need to specify in your TestNG class java file the location of your Chrome driver.
 
 ## Modify TestNG class java file
 ```java
@@ -97,3 +97,6 @@ Right click on the newly created Maven project, TestNG, Convert to TestNG, a tes
 - Right click on the testng.xml, Run as, TestNG Suite;
 - Check results in Console, and Results of running suite.
 
+# CSS and XPath
+- How to write CSS and XPath: https://saucelabs.com/resources/articles/selenium-tips-css-selectors
+- Use Ranorex Selocity Chrome plugin to copy paste css and XPath selectors.
