@@ -49,8 +49,7 @@ Right click JRE System Library listed under the newly create Mavan project, prop
 ## Create TestNG class
 - Right click the newly created Maven project, New, Other, TestNG class, Next;
 - Source folder \Maven-project-artifact-id\src\test\java, src/main to store developer code, src/test to store testing code;
-- Package name: com.kugeci, Class name: HomePageTest, How to structure test classes plese read: http://elementalselenium.com/tips/37-oop;
-- Choose @Before Test, and @After Test, Finish.
+- Package name: com.kugeci, Class name: HomePageTest, choose @Before Test, and @After Test, Finish.
 
 ## Copy WebDriver
 - Right click the newly created Maven project, New, Folder, Folder Name: driver, Finish;
@@ -100,3 +99,7 @@ Right click on the newly created Maven project, TestNG, Convert to TestNG, a tes
 # CSS and XPath
 - How to write CSS and XPath: https://saucelabs.com/resources/articles/selenium-tips-css-selectors
 - Use Ranorex Selocity Chrome plugin to copy paste css and XPath selectors.
+
+# Test Suite and Tests Stucture
+- How to structure test classes plese read: http://elementalselenium.com/tips/37-oop;
+- TestNG before and after annotations: https://howtodoinjava.com/testng/testng-before-and-after-annotations/
