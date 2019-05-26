@@ -11,6 +11,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 
 public class Setup {
+	// Variable scope: Broadly speaking, public means everyone is allowed to access, 
+	// private means that only members of the same class are allowed to access, 
+	// and protected means that members of subclasses are also allowed. 
 	protected WebDriver driver;
 	protected String browser;
 	
@@ -19,22 +22,18 @@ public class Setup {
 	public void beforeTest(String browser) throws Exception {
 		this.browser = browser;
 		if(browser.equals("Chrome")) {
-			//System.out.println("at Setup beforeTest Chrome");
 			System.setProperty("webdriver.chrome.driver","..\\drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browser.equals("Firefox")) {
-			//System.out.println("at Setup beforeTest Firefox");
 			System.setProperty("webdriver.gecko.driver","..\\drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
-		//System.out.println("at 15 seconds pause");
 		//driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 	}
 
 	@AfterTest
 	public void afterTest() {
-		//System.out.println("at Setup afterTest");
 		driver.quit();	
 	}
 
