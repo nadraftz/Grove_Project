@@ -103,3 +103,6 @@ Right click on the newly created Maven project, TestNG, Convert to TestNG, a tes
 # Test Suite and Tests Stucture
 - How to structure test classes plese read: http://elementalselenium.com/tips/37-oop;
 - TestNG before and after annotations: https://howtodoinjava.com/testng/testng-before-and-after-annotations/
+
+# Debug
+- Print variable in Console when executing the scripts: System.out.println(variablename)
