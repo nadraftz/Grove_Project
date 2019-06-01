@@ -20,7 +20,6 @@ public class Setup {
 	@BeforeTest
 	@Parameters("browser")
 	public void beforeTest(String browser) throws Exception {
-		this.browser = browser;
 		if(browser.equals("Chrome")) {
 			System.setProperty("webdriver.chrome.driver","..\\drivers\\chromedriver.exe");
 			driver=new ChromeDriver();
