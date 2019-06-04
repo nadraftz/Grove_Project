@@ -106,3 +106,10 @@ Right click on the newly created Maven project, TestNG, Convert to TestNG, a tes
 
 # Debug
 - Print variable in Console when executing the scripts: System.out.println(variablename)
+
+# Run Time
+- Source code and run time are different, run time are located at "target" folder which is at the same level of "src" folder.
+- Normally you change your source code, save it, then run from testng.xml - run as TestNG Suite, the "target" folder will automatically updated to your lateset code.
+- However, if you find run time code is not updating after you modified your source code, do the following 2 steps:
+- Clean the project (top menu Project - Clean)
+- Update the maven project (Project > Maven > Update Maven Project)

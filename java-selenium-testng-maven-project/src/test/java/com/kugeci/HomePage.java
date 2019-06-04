@@ -2,6 +2,7 @@ package com.kugeci;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
+import java.util.Calendar;
 
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebElement;		
@@ -17,9 +18,9 @@ public class HomePage extends Setup {
 		driver.get("https://www.kugeci.com/");
 		
 		// maximizing the window
-		driver.manage().window().maximize();	
+		driver.manage().window().maximize();
     }
-    
+	
 	@Test
 	public void testTitle() throws UnsupportedEncodingException {
 		// getBytes("US-ASCII") works for all languages.
@@ -163,5 +164,14 @@ public class HomePage extends Setup {
 		softAssert3.assertTrue(actualString6.contains(expectedString6), String.format("Failure  message 6: Expected is %s, but actual is %s", expectedString6, actualString6));
 		
 		softAssert3.assertAll();
+	}
+	
+	@Test
+	public void testCopyrightYear() {
+		Calendar now = Calendar.getInstance();
+		int year = now.get(Calendar.YEAR);
+		String expectedCopyrightYear = String.valueOf(year);
+        String actualCopyrightYear = driver.findElement(By.cssSelector("#app .top-menu-wrap:nth-child(4) .row [class='col-md-12']:nth-of-type(1)")).getText();	        
+        Assert.assertTrue(actualCopyrightYear.contains(expectedCopyrightYear), "Failure  message: Copyright Year is wrong!");
 	}
 }
