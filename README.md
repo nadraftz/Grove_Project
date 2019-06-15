@@ -1,4 +1,4 @@
-# Java_Selenium_TestNG_Maven
+# Selenium_Java_Maven_TestNG
 Sample Selenium WebDriver Maven Projects I created in Java by using TestNG and Eclipse IDE.
 
 # Setup
