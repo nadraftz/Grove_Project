@@ -9,12 +9,13 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;	
 
 public class HomePageOld extends Setup {
 	
-    @BeforeMethod
+    @BeforeClass
     public void beforeChildTest() {
 		driver.get("https://www.kugeci.com/");
 		

@@ -8,7 +8,9 @@ import org.testng.annotations.Parameters;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 
 public class Setup {
 	// Variable scope: Broadly speaking, public means everyone is allowed to access, 
@@ -17,7 +19,7 @@ public class Setup {
 	protected WebDriver driver;
 	protected String browser;
 	
-	@BeforeTest
+	@BeforeClass //every class needs it owner driver, can not write BeforeTest here to run multiple classes in testng.xml
 	@Parameters("browser")
 	public void beforeTest(String browser) throws Exception {
 		//this.browser = browser;
@@ -32,7 +34,7 @@ public class Setup {
 		//driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 	}
 
-	@AfterTest
+	@AfterClass
 	public void afterTest() {
 		driver.quit();	
 	}

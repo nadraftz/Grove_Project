@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
@@ -13,7 +14,7 @@ import com.kugeci.PageFactory.SearchResultPage;
 
 public class TestSearchWithPageFactory extends Setup {
 
-    @BeforeMethod
+    @BeforeClass
     public void beforeTest() {
 		driver.get("https://www.kugeci.com/");		
 		// maximizing the window
