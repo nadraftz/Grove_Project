@@ -1,5 +1,5 @@
 # Selenium_Java_Maven_TestNG
-Sample Selenium WebDriver Maven Projects I created in Java by using TestNG and Eclipse IDE.
+Sample Selenium WebDriver Maven Projects I created in Java by using TestNG and Page Object Model (POM) & Page Factory.
 
 # Setup
 ## Install Marven and TestNG in Eclipse, and downloaded the selenium chrome webdriver.
