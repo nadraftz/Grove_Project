@@ -7,6 +7,11 @@ You can either google Marven installation in Eclipse, and Install TestNG in Ecli
 - https://www.youtube.com/watch?v=WzuJANOPLyQ - this is a tutorial for beginners without introducing TestNG nor Maven.
 - https://www.techbeamers.com/create-selenium-webdriver-maven-project/
 - https://www.guru99.com/maven-jenkins-with-selenium-complete-tutorial.html
+Basically you need to install the following 4 items:
+- Java: https://www.guru99.com/install-java.html
+- Selenium: https://www.guru99.com/installing-selenium-webdriver.html
+- TestNG: https://www.guru99.com/install-testng-in-eclipse.html
+- Maven: https://www.guru99.com/maven-jenkins-with-selenium-complete-tutorial.html
 
 ## Create a Maven project 
 - From Eclipse - File - New - Other - Maven - Maven Project, Next;
