@@ -20,7 +20,7 @@ public class GoToHomePage {
 //		driver = getDriver();
 //		System.out.println("test");
 		
-		driver.get("https://www.nike.com/");		
+		driver.get("http://www.automationpractice.com");		
 		// maximizing the window
 		driver.manage().window().maximize();
     }

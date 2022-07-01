@@ -17,7 +17,7 @@ import com.kugeci.PageFactory.HomePage;
 import com.kugeci.PageFactory.SearchResultPage;
 import org.openqa.selenium.Keys;
 
-public class TestSearchWithPageFactory extends Setup {
+public class LoginTest extends Setup {
 
 	private static final By LOGIN_BUTTON = By.id("hf_title_signin_membership");
 	private static final By EMAIL_FIELD = By.cssSelector("input[type='email']");
@@ -31,7 +31,7 @@ public class TestSearchWithPageFactory extends Setup {
     	GoToHomePage myGoToHomePage = new GoToHomePage(driver);
     	myGoToHomePage.beforeTest();
     	
-		driver.get("https://www.nike.com/");		
+		driver.get("http://www.automationpractice.com");		
 		// maximizing the window
 		driver.manage().window().maximize();
     }
@@ -46,17 +46,17 @@ public class TestSearchWithPageFactory extends Setup {
     	
 	
   		
-    	wait_for_login_button();
-    	login_to_account();
-    	driver.navigate().refresh();
 //    	wait_for_login_button();
 //    	login_to_account();
-    	
-		
-    	try {
-    		Thread.sleep(4000);
-    		
-    	}catch(Exception ignored) {}
+//    	driver.navigate().refresh();
+////    	wait_for_login_button();
+////    	login_to_account();
+//    	
+//		
+//    	try {
+//    		Thread.sleep(4000);
+//    		
+//    	}catch(Exception ignored) {}
     	
 
     }
