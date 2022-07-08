@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TestSuite" parallel="false">
+<suite name="Parallel TestSuite" parallel="classes" thread-count="2">
 
 	<test name="ChromeTest">
 	<parameter name="browser" value="Chrome" />
 		<classes>
-			<class name="com.kugeci.TestSearchWithPageFactory">
+			<class name="com.kugeci.LoginTest">
 			</class>
-			<class name="com.kugeci.HomePageOld">
+			<class name="com.kugeci.WomenPageTests">
 			</class>
 		</classes>
 	</test>
 
-	<test name="FirefoxTest">
-	<parameter name="browser" value="Firefox" />
-		<classes>
-			<class name="com.kugeci.TestSearchWithPageFactory">
-			</class>
-			<class name="com.kugeci.HomePageOld">
-			</class>
-		</classes>
-	</test>
+
 	
 	<!--
 	<test name="EdgeTest">
