@@ -31,7 +31,15 @@ public class Setup {
 			System.setProperty("webdriver.gecko.driver","..\\drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
+		driver.get("http://www.automationpractice.com");
+		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+	}
+	
+	public void sleepTime(Integer sleepLength ) {
+		try {
+			Thread.sleep(sleepLength);
+			}catch(Exception ignored) {}
 	}
 
 	@AfterClass
