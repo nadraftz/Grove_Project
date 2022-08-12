@@ -24,6 +24,8 @@ public class LoginTest extends Setup {
 	private static final By PASSWORD_FIELD = By.cssSelector("input[type='password']");
 	private static final By SIGN_IN = By.cssSelector("input[value='SIGN IN']");
 
+	
+
 
 	
     @BeforeClass
