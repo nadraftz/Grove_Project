@@ -31,8 +31,8 @@ public class Setup {
 			System.setProperty("webdriver.gecko.driver","..\\drivers\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
-		driver.get("http://www.automationpractice.com");
-		driver.manage().window().maximize();
+//		driver.get("http://www.automationpractice.com");
+//		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 	}
 	
