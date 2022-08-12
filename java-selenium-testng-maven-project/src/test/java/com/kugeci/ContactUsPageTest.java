@@ -1,7 +1,9 @@
 package com.kugeci;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 	public class ContactUsPageTest extends Setup {
@@ -32,7 +34,9 @@ import org.testng.annotations.Test;
 	    	driver.findElement(MESSAGE).sendKeys("Hello World");
 	    	driver.findElement(SEND_BUTTON).click();
 
-	    	
+	    	WebElement successMessage = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p"));
+	    	boolean successShown = successMessage.isDisplayed();
+	    	Assert.assertEquals(successShown, true, "Success message was not displayed"); 
 	    	
 	    	
 	    	sleepTime(2000);
