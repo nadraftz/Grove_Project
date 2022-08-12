@@ -6,9 +6,11 @@
 	<test name="ChromeTest">
 	<parameter name="browser" value="Chrome" />
 		<classes>
-			<class name="com.kugeci.LoginTest">
+	<!--<class name="com.kugeci.LoginTest">
 			</class>
-			<class name="com.kugeci.WomenPageTests">
+		<class name="com.kugeci.WomenPageTests">
+			</class>-->
+			<class name="com.kugeci.MyAccountPage">
 			</class>
 		</classes>
 	</test>
