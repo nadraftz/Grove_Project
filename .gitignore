@@ -3,5 +3,5 @@
 .settings/**
 #target/
 test-output/
-/target/
-../drivers/**
+/target/**
+/drivers/**
