@@ -1,7 +1,6 @@
 #.classpath
 #.project
-.settings/**
-#target/
+java-selenium-testng-maven-project/.settings/**
 test-output/
-/target/**
+java-selenium-testng-maven-project/target/**
 /drivers/**
